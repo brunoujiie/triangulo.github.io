@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('campo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-size: 1700px 1000px;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  
+}
+
+nav {
+  float: left;
+  color: white;
+  width: 30%;
+  height: 300px;   padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  color: white;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.imageflex { display: flex; }
+.imageflexcontent { margin-left: 5px; margin-top: 0; }
+
+
+footer {
+  padding: 30px;
+  padding-right: 170px;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Aula 00 - Vídeos e Eu</h2>
+</header>
+
+<section>
+  <nav>
+    <h1>Sobre mim</h1>
+    <div class="imageflex">
+  	<img src="foto.jpeg" width="200" height="200">
+
+  	<p class="imageflexcontent">
+		<ul>
+  			<li>- Desenvolvedor Salesforce</li>
+  			<li>- Atuação no setor financeiro</li>
+  			<li>- Estudante de Bacharelado em ciência e tecnologia</li>
+			<li>- Amante de animais</li>
+			<a style="color: white" href="https://www.robocore.net/?srsltid=AfmBOorRqa-6NYxQg3HRLsGwqdnF90CbYOTTXYYImPAPErtGa7mNwS08">Compre na loja robocore!!</a>
+		</ul> 
+
+	</p>
+	</div>
+
+  </nav>
+  
+  <article>
+    <h1>Banda preferida e o único ser vivo que me ama</h1>
+
+	<iframe width="450" height="200"
+		src="https://www.youtube.com/embed/sZl9zL5tVk4?si=r0VoBpQBRu2rVQZc">
+        </iframe>
+  	<video width="200" height="200" controls>
+		  <source src="video.mp4" type="video/ogg">
+		Your browser does not support the video tag.
+  	</video>
+    
+  </article>
+</section>
+
+<footer>
+  <audio controls autoplay muted>
+	  <source src="audio.mpeg" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+</footer>
+
+</body>
+</html>
